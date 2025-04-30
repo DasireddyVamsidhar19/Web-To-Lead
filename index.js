@@ -1,11 +1,20 @@
-//inputDate outputDate
+let isCaptcheChecked=false;
+function handleSubmit(event){
+    if(isCaptcheChecked){
+        let outputDate=document.querySelector('.outputDate')
+        let inputDate=document.querySelector('.inputDate')
 
-function handleSubmit(){
-    let outputDate=document.querySelector('.outputDate')
-    let inputDate=document.querySelector('.inputDate')
+        let formattedDate=new Date(inputDate.value).toLocaleDateString('en-IN');
+        outputDate.value=formattedDate;
+    }
+    else{
+        alert('Please Check the Captche to sumbit the details...')
+        event.preventDefault();
+    }
+}
 
-    let formattedDate=new Date(inputDate.value).toLocaleDateString('en-IN');
-    outputDate.value=formattedDate;
+function handleCaptche(){
+    isCaptcheChecked=true;
 }
 
 function timestamp() { 

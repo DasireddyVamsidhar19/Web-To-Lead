@@ -15,7 +15,7 @@
 <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
     
     <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DIR000001tlwb" 
-    method="POST" onsubmit="handleSubmit()">
+    method="POST" onsubmit="handleSubmit(event)">
     
     <input type=hidden name='captcha_settings' value='{"keyname":"WebToLeadForm","fallback":"true","orgId":"00DIR000001tlwb","ts":""}'>
     <input type=hidden name="oid" value="00DIR000001tlwb">
@@ -33,7 +33,7 @@
     <input id="date" type="date" required="true" class="inputDate"/>
     <!-- Lead Date:<span class="dateInput dateOnlyInput"><input  id="00NIR00000EpRrC" name="00NIR00000EpRrC" size="12" type="text" /></span><br> -->
     
-    <div class="g-recaptcha" data-sitekey="6LftXSkrAAAAAB2WDZ2rRPQGrAuOc36vSyf0fG1m"></div><br>
+    <div data-callback="handleCaptche" class="g-recaptcha" data-sitekey="6LftXSkrAAAAAB2WDZ2rRPQGrAuOc36vSyf0fG1m"></div><br>
 
     <input type="submit" name="submit" class="sbmtButton">
     </form>
