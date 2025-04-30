@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: cadetblue;
+    font-weight: 900;
+
+}
+input,label{
+    display: block;
+}
+label{
+    color: brown;
+}
+input{
+    width: 100%;
+}
+.sbmtButton{
+    margin: 15px auto 0 auto;
+    width: 40%;
+    border-radius:9px;
+    padding: 2px;
+    background-color:lightblue;
+    font-weight: bold;
+}
+.sbmtButton:hover{
+    background-color: cadetblue;
+    cursor: pointer;
+}
+/* margin top right bottom left */
+form{
+    min-width: 300px;
+    max-width: 500px;
+    margin: auto;
+    padding:10px;
+    border: 2px black solid;
+}
